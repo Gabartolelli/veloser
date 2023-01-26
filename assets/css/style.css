@@ -19,12 +19,39 @@ body {
 }
 
 header {
-  display: flex;
-  justify-content: center;
   margin-top: 40px;
+  height: 230px;
 }
 header h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 30px;
+  text-align: center;
+  color: black;
+}
+header .minicards {
+  display: flex;
+  justify-content: space-around;
+}
+header .minicards .minicard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+}
+header .minicards .minicard img {
+  width: 100px;
+  height: 1000px;
+}
+header .minicards .minicard h6 {
+  color: black;
+}
+
+h3 {
+  text-align: center;
+  color: black;
+  margin: 45px;
 }
 
 .tarjetas {
@@ -37,7 +64,7 @@ header h1 {
 }
 .tarjetas .card {
   width: 350px;
-  background-image: url(./assets/img/fotor_2023-1-23_17_29_50.png);
+  background-image: url(/assets/img/fotor_2023-1-23_17_29_50.png);
   background-size: contain;
 }
 .tarjetas .card p {
@@ -52,8 +79,11 @@ header h1 {
   position: absolute;
   margin-top: 355px;
   margin-left: 100px;
-  border: solid 3px;
+}
+.tarjetas .card a button {
   text-decoration: none;
+  padding: 5px;
+  border: solid 3px;
 }
 
 .footer {
