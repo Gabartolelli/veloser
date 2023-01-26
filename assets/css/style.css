@@ -64,7 +64,7 @@ h3 {
 }
 .tarjetas .card {
   width: 350px;
-  background-image: url(../assets/img/fotor_2023-1-23_17_29_50.png);
+  background-image: url(/assets/img/fotor_2023-1-23_17_29_50.png);
   background-size: contain;
 }
 .tarjetas .card p {
@@ -148,6 +148,14 @@ h3 {
 .formulario label > textarea {
   height: 70px;
 }
+@media (max-width: 700px) {
+  .formulario .formulario {
+    border-radius: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 80px;
+    grid-template-areas: "titulo" "nomApell" "email" "tel" "asunto" "mensaje" "btn";
+  }
+}
 
 .footer {
   background-color: rgb(255, 123, 0);
@@ -159,6 +167,12 @@ h3 {
   list-style: none;
   margin-top: 20px;
   margin-bottom: 20px;
+  color: black;
+}
+.footer div > ul > a {
+  color: black;
+  list-style: none;
+  text-decoration: none;
 }
 .footer div > a > img {
   margin: 30px;

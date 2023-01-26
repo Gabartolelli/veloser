@@ -66,5 +66,20 @@
     label > textarea{
         height: 70px;
     }
+    @media(max-width:700px){
+        .formulario{
+            border-radius: 0;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 80px;
+            grid-template-areas: "titulo"
+                                 "nomApell" 
+                                 "email"
+                                 "tel"      
+                                 "asunto"
+                                 "mensaje"  
+                                 "btn"
+                                 ;
+        }
     
+    }
 }
